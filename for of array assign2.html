@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Using for...of, write a function to find the maximum value in an array of numbers.</h2>
+    <p id="demo"></p>
+
+    <script>
+        const arrayOfNumbers=[66,45,35,25,84,76];
+
+        let text = "";
+        for (let x of arrayOfNumbers) {
+        text += x + "<br>";
+        }
+         
+        document.getElementById("demo").innerHTML=text;
+        console.log(Math.max(...arrayOfNumbers));
+    
+    </script>
+</body>
+</html>

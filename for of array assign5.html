@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create a function that uses for...of to calculate the product of all the numbers in an array</h2>
+    <script>
+       function getProducts(arr) {
+            let products = [1,2,5,6];
+             for(let i = 0; i < arr.length; i++) {
+             let product = 0;
+             for(let value of arr.values()) {
+             if(value != arr[i]) {
+             product *= value;
+             }
+             }
+            products.push(product);
+            }
+
+            return products;
+            }
+            //  getProducts([1, 7, 3, 4]);
+    </script>
+</body>
+</html>
+
+<!-- Using for...in, write a function to log all the keys and their corresponding values in an object.
+
+Using for...of, create a function that finds the average age of people in an object where keys are person names and values are their ages.
+
+With the forEach method, write a function to concatenate all the values of an object into a single string.
+
+Create a function that uses for...in to determine if a specific key exists in an object. Return true if the key is present, otherwise false.
+
+Write a function that uses for...of to calculate the sum of all the values in an object where the values are numbers. -->
