@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element Selectors</title>
+    <style>
+        input[type=radio]{
+            
+            width:10%;  
+            height:auto; 
+            }
+
+       #cars::before label {
+               width:100%;
+               height: 100px;
+               border-radius:0;
+               border-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo-element Selectors</h2>
+     <p>Create a custom-styled checkbox or radio button using the ::before or ::after pseudo-element selector. Style the pseudo-element to appear as a custom checkbox or radio button when selected.</p>
+    
+      <input type="radio" id="cars" name="fav_cars" value="Mercidies">
+      <label for="cars">Mercidies</label><br>
+       
+      <input type="radio" id="cars" name="fav_cars" value="BMW" >
+      <label for="cars">BMW</label><br>
+       
+      <input type="radio" id="cars" name="fav_cars" value="Thar">   
+      <label for="cars">Thar</label><br><br>
+
+    
+</body>
+</html>

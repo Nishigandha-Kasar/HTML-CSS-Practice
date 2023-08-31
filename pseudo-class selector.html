@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Selectors</title>
+    <style>
+        input[type=text] {
+                  width: 80%;
+                  padding: 12px;
+                  margin: 8px 0;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  }
+        input[type=submit] {
+                 width: 80%;
+                 background-color:rgba(135, 183, 235, 0.988);
+                 color: white;
+                 padding: 14px;
+                 margin: 8px 0;
+                 border-radius: 4px; 
+                 cursor: pointer;
+                }
+        input[type=submit]:hover {
+                  background-color: blue;
+                }
+        input:focus {
+                    background-color: rgb(153, 158, 160);
+                }
+    </style>
+</head>
+<body> 
+    <h2>Pseudo-class Selectors</h2>
+    <p>Create a form and style the text input fields differently when they are in focus using the :focus pseudo-class selector. Apply a border and background color to the input fields when they are focused.</p>
+    <div>
+       <form>
+        <label for="fname"></label><br>
+        <input type="text" id="fname" name="Nisha" placeholder="First Name"><br>
+ 
+        <label for="lname"></label><br>
+        <input type="text" id="lname" name="Kasar" placeholder="Last Name"><br><br>
+ 
+       <input type="submit"><br><br>
+    </form>
+    </div> 
+</body>
+</html>
